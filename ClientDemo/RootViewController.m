@@ -79,7 +79,7 @@
     _dbManager = [DropBeaconManager sharedManager];
     _dbManager.delegate = self;
     
-    [_dbManager setAuthenticationToken:@"{{your auth token here}}" andSecret:@"your auth secret here"];
+    [_dbManager setAuthenticationToken:@"{{your auth token here}}" andSecret:@"{{your auth secret here}}"];
     
     [_dbManager verifyAuthenticationInfo];
     

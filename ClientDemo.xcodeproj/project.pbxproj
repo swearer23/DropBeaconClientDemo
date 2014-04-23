@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6170B09190794FF0002BD56 /* libDropBeaconSDKRelease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69CB29F1904E43C00EFF242 /* libDropBeaconSDKRelease.a */; };
+		A63129821907CB340022778B /* libDropBeaconSDKRelease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69CB29F1904E43C00EFF242 /* libDropBeaconSDKRelease.a */; };
 		A6768A1218F3F52E0011E811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6768A1118F3F52E0011E811 /* Foundation.framework */; };
 		A6768A1418F3F52E0011E811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6768A1318F3F52E0011E811 /* CoreGraphics.framework */; };
 		A6768A1618F3F52E0011E811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6768A1518F3F52E0011E811 /* UIKit.framework */; };
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A6170B0A190795590002BD56 /* EnclosedDBBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnclosedDBBeaconRegion.h; path = headers/EnclosedDBBeaconRegion.h; sourceTree = "<group>"; };
+		A63129831907CE700022778B /* EnclosedDBBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnclosedDBBeaconRegion.h; path = headers/EnclosedDBBeaconRegion.h; sourceTree = "<group>"; };
 		A6768A0E18F3F52E0011E811 /* ClientDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6768A1118F3F52E0011E811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6768A1318F3F52E0011E811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6170B09190794FF0002BD56 /* libDropBeaconSDKRelease.a in Frameworks */,
+				A63129821907CB340022778B /* libDropBeaconSDKRelease.a in Frameworks */,
 				A6768A7418F3FA0C0011E811 /* CoreBluetooth.framework in Frameworks */,
 				A6768A7218F3F82C0011E811 /* CoreLocation.framework in Frameworks */,
 				A6768A7018F3F8130011E811 /* libsqlite3.0.dylib in Frameworks */,
@@ -186,7 +186,7 @@
 		A6768A4618F3F6130011E811 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				A6170B0A190795590002BD56 /* EnclosedDBBeaconRegion.h */,
+				A63129831907CE700022778B /* EnclosedDBBeaconRegion.h */,
 				A6A6169C1901042D0031515F /* DBDisplayManager.h */,
 				A6A6169A190102700031515F /* DBPoi.h */,
 				A6A61698190102320031515F /* DBScanner.h */,
