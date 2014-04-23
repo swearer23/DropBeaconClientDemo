@@ -78,9 +78,8 @@
     [super viewDidLoad];
     _dbManager = [DropBeaconManager sharedManager];
     _dbManager.delegate = self;
-    //[_dbManager setAuthenticationToken:@"aede022d5c887ddf1a815b073d81daac" andSecret:@"b1db5e5d2dc3f9e7251b6ff488e85a60"];
     
-    [_dbManager setAuthenticationToken:@"5b43db6e60812fbd7cbc0da26a25a72d" andSecret:@"c5ecaade3252a976858dae8e04e165ba"];
+    [_dbManager setAuthenticationToken:@"{{your auth token here}}" andSecret:@"your auth secret here"];
     
     [_dbManager verifyAuthenticationInfo];
     
