@@ -9,9 +9,24 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CLLocationManagerDelegate.h>
 
+typedef NS_ENUM(NSInteger, DBScannerStatus) {
+    DBScannerStatusIsWorking = 0,
+    DBScannerStatusLocationUnavailable,
+    DBScannerStatusBLEUnavailable,
+    DBScannerStatusOtherError
+};
+
 @class DBScanner;
+@class DBPoi;
 
 @protocol DBScannerDelegate <NSObject>
+
+@optional
+
+- (void)scanner:(DBScanner *) scanner updateScannerStatus:(DBScannerStatus)status;
+- (void)scannerIsLoadingPOIData:(DBScanner *) scanner;
+- (void)scannerLoadingPOIDataFailed:(DBScanner *) scanner;
+- (void)scannerLoadingPOIDataOK:(DBScanner *) scanner;
 
 @required
 - (void)scanner:(DBScanner *) scanner didRangedDBBeaconRegion : (NSArray *) regionList;
@@ -22,5 +37,6 @@
 
 @interface DBScanner : NSObject <CLLocationManagerDelegate>
 @property id<DBScannerDelegate> delegate;
++ (instancetype)sharedScanner;
 - (void)startScan;
 @end

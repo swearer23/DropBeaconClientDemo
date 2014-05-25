@@ -16,7 +16,7 @@
 - (void)dbDisplayManager:(DBDisplayManager *)displayManager displayDidPrepared:(DBPoi *)poi;
 @end
 
-@interface DBDisplayManager : NSObject
+@interface DBDisplayManager : NSObject <UIWebViewDelegate>
 @property id<DBDisplayManagerDelegate> delegate;
 - (DBDisplayManager *)initWithDBPoi:(DBPoi *) poi;
 - (void)loadPoiView;

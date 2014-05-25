@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DBBeaconRegion.h"
 
 @interface EnclosedDBBeaconRegion : NSObject
 @property (nonatomic , readonly) NSString * pmmid;
@@ -18,5 +19,5 @@
 @property (nonatomic, readonly) NSInteger prepopDuration;
 @property (nonatomic, readonly) NSNumber * preDefineDistance;
 @property (nonatomic, readonly) double distance;
-- (instancetype) initWithDBBeaconRegion : (id) dbBeaconRegion;
+- (instancetype) initWithDBBeaconRegion : (DBBeaconRegion *) dbBeaconRegion;
 @end
